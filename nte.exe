@@ -1,0 +1,40 @@
+# Document Counter Application
+
+An automatic document counting application that processes various document formats and provides statistics on page counts, word counts, and character counts.
+
+## Features
+
+- **Multi-format Support**: Process PDF, Word (DOCX), Excel (XLSX), Images (JPG, PNG, TIFF), and Text files
+- **Automatic Counting**: Count pages, words, and characters automatically
+- **OCR Support**: Extract text from images using Tesseract OCR
+- **Web Interface**: Clean, responsive web interface for file upload and management
+- **Database Storage**: SQLite database for tracking all documents
+- **Statistics Dashboard**: View overall statistics and document details
+- **Export Functionality**: Export document data to CSV format
+- **Real-time Processing**: Instant document processing and counting
+
+## Supported Formats
+
+| Format | Extensions | Counts |
+|--------|------------|--------|
+| PDF | .pdf | Pages, Words, Characters |
+| Word | .docx | Pages (approx), Words, Characters |
+| Excel | .xlsx, .xls | Sheets, Words |
+| Images | .jpg, .jpeg, .png, .tiff | Pages (1), Words (OCR) |
+| Text | .txt, .md, .csv | Pages (approx), Words, Characters |
+
+## Installation
+
+### Prerequisites
+
+- Python 3.8 or higher
+- Tesseract OCR (for image text extraction)
+
+### Install Tesseract OCR
+
+**Windows:**
+Download from: https://github.com/UB-Mannheim/tesseract/wiki
+
+**Linux:**
+```bash
+sudo apt-get install tesseract-ocr
